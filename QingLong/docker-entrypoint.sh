@@ -7,8 +7,8 @@ DEFAULT_RCLONE_CONF="[huggingface]
 type = webdav
 url = https://domi.teracloud.jp/dav/
 vendor = other
-user = 15614620010
-pass = 9dlp_OwsSLLOvxzCDyQjUm9u0hR-hyG63-06hxJbqwI"
+user = zhanghaipengbeifen1
+pass = PdK8wF6V9HDHHiM7482nbfCqlUSvBwjL_k-0nd8-zBk"
 
 DEFAULT_NOTIFY_CONFIG='{
   "type": "weWorkBot",
@@ -24,8 +24,8 @@ NOTIFY_CONFIG="${NOTIFY_CONFIG:-$DEFAULT_NOTIFY_CONFIG}"
 
 # ▼▼▼▼▼▼▼▼▼▼▼▼ 以下为您的原始脚本（完全不变） ▼▼▼▼▼▼▼▼▼▼▼▼
 dir_shell=/ql/shell
-. $dir_shell/share.sh
-. $dir_shell/env.sh
+。 $dir_shell/share.sh
+。 $dir_shell/env.sh
 
 echo -e "======================写入rclone配置========================\n"
 echo "$RCLONE_CONF" > ~/.config/rclone/rclone.conf
