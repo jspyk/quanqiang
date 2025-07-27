@@ -36,7 +36,7 @@ ARG QL_BRANCH=v2.18.3
 
 ENV DEFAULT_ADMIN_USERNAME="15614620010" \
     DEFAULT_ADMIN_PASSWORD="Z4h0p88." \
-    DEFAULT_RCLONE_CONF="[huggingface]\ntype = webdav\nurl = https://domi.teracloud.jp/dav/\nvendor = other\nuser = zhanghaipengbeifen1\npass = PdK8wF6V9HDHHiM7482nbfCqlUSvBwjL_k-0nd8-zBk" \
+    DEFAULT_RCLONE_CONF="[huggingface]\ntype = webdav\nurl = https://kamo.teracloud.jp/dav/\nvendor = other\nuser = zhanghaipengbeifen1\npass = PdK8wF6V9HDHHiM7482nbfCqlUSvBwjL_k-0nd8-zBk" \
     DEFAULT_NOTIFY_CONFIG='{"type": "weWorkBot", "weWorkBotKey": "323eef9d-844a-404f-a0f3-4cff479666f1"}'
 	
 ENV PNPM_HOME=/root/.local/share/pnpm \
