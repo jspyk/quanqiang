@@ -24,11 +24,13 @@ NOTIFY_CONFIG="${NOTIFY_CONFIG:-$DEFAULT_NOTIFY_CONFIG}"
 
 # ▼▼▼▼▼▼▼▼▼▼▼▼ 以下为您的原始脚本（完全不变） ▼▼▼▼▼▼▼▼▼▼▼▼
 dir_shell=/ql/shell
-。 $dir_shell/share.sh
-。 $dir_shell/env.sh
+. $dir_shell/share.sh
+. $dir_shell/env.sh
 
 echo -e "======================写入rclone配置========================\n"
-echo "$RCLONE_CONF" > ~/.config/rclone/rclone.conf
+mkdir -p /home/coder/.config/rclone
+echo "$RCLONE_CONF" > /home/coder/.config/rclone/rclone.conf
+chown -R coder:coder /home/coder/.config 
 
 echo -e "======================1. 检测配置文件========================\n"
 import_config "$@"
